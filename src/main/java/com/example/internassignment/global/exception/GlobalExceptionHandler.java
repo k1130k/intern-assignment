@@ -1,6 +1,7 @@
 package com.example.internassignment.global.exception;
 
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.nio.file.AccessDeniedException;
 import java.util.Map;
 
+@Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -23,6 +25,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGeneric(Exception e) {
+        log.error("서버 내부 오류 발생", e);
         return ResponseEntity.internalServerError().body(Map.of(
                 "error", Map.of(
                         "code", "INTERNAL_ERROR",
