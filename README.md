@@ -2,7 +2,7 @@
 
 -  **Swagger 문서** : [http://43.201.60.238:8080/swagger-ui/index.html](http://43.201.60.238:8080/swagger-ui/index.html)
 -  **GitHub Repository** : [https://github.com/k1130k/intern-assignment.git](https://github.com/k1130k/intern-assignment.git)
--  **API 서버 주소** : `http://43.201.60.238:8080
+-  **API 엔드포인트 URL** : `http://43.201.60.238:8080
 
 ---
 
