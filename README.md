@@ -18,6 +18,30 @@ JWT 토큰은 Access Token 형태로 클라이언트에 전달되며, 이후 보
 
 ---
 
+## 트러블 슈팅 & 개선 사항
+
+---
+
+- ec2 서버 실행 후 수 분이 지나면 서버 응답 없음 현상
+
+  문제 원인
+  
+AWS EC2 인스턴스에서 Spring Boot 애플리케이션을 실행했지만,
+수 분 뒤 서버가 자동 종료되어 더 이상 API 응답이 되지 않는 현상 발생.
+→ 서버가 꺼진 게 아니라, 터미널 세션 종료 시 백그라운드 프로세스까지 함께 종료된 상황
+
+해결 방법
+
+EC2 인스턴스에 swap 메모리를 설정해 메모리 부족 상황을 보완하고,
+nohup java -jar 또는 screen, tmux 등으로 백그라운드에서 안전하게 서버가 계속 유지되도록 실행
+
+블로그 자세한 내용:
+https://gurofirefist.tistory.com/15
+
+
+
+
+
 # API 명세서
 
 **Swagger 문서** 참고 :  [http://43.201.60.238:8080/swagger-ui/index.html](http://43.201.60.238:8080/swagger-ui/index.html)
