@@ -6,17 +6,19 @@
 
 ---
 
-## 프로젝트 설명
+## 프로젝트 개요
 
-회원가입과 로그인 기능을 구현하고, 로그인 시 JWT 토큰을 발급하여 인증 시스템을 구축하였습니다.
+- 회원가입/로그인 → JWT 발급 → Access/Refresh 토큰 처리
+  
+- 역할 기반 인가: User / Admin 구분 및 접근 제한
+  
+- Swagger(OpenAPI) 문서화
+  
+- AWS EC2 배포로 실서비스 접근 가능
 
-JWT 토큰은 Access Token 형태로 클라이언트에 전달되며, 이후 보호된 API 요청 시 `Authorization` 헤더에 포함되어 전송됩니다.
+## 주요 기술 스택
 
-역할 기반 인가 기능을 통해 일반 사용자(User)와 관리자(Admin)를 구분하고, 관리자는 사용자에게 권한을 부여할 수 있습니다.
-
-모든 API는 Swagger(OpenAPI)를 통해 문서화되어 있으며, 실제 동작 환경인 AWS EC2에 배포되어 외부에서도 접근 가능합니다.
-
----
+- Java 17, Spring Boot, Spring Security, JWT, AWS EC2, Swagger
 
 ## 트러블 슈팅 & 개선 사항
 
