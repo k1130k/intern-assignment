@@ -16,13 +16,15 @@
   
 - AWS EC2 배포로 실서비스 접근 가능
 
+---
+
 ## 주요 기술 스택
 
 - Java 17, Spring Boot, Spring Security, JWT, AWS EC2, Swagger
 
-## 트러블 슈팅 & 개선 사항
-
 ---
+
+## 트러블 슈팅 & 개선 사항
 
 - ec2 서버 실행 후 수 분이 지나면 서버 응답 없음 현상
 
@@ -38,9 +40,7 @@ EC2 인스턴스에 swap 메모리를 설정해 메모리 부족 상황을 보�
 블로그 자세한 내용:
 https://gurofirefist.tistory.com/15
 
-
-
-
+---
 
 # API 명세서
 
