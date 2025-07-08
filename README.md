@@ -1,6 +1,6 @@
 
 
--  **Swagger 문서** : [http://43.201.60.238:8080/swagger-ui/index.html](http://43.201.60.238:8080/swagger-ui/index.html)
+-  **Swagger 문서 (서버 중단으로 접속 불가)** : [http://43.201.60.238:8080/swagger-ui/index.html](http://43.201.60.238:8080/swagger-ui/index.html)
 -  **GitHub Repository** : [https://github.com/k1130k/intern-assignment.git](https://github.com/k1130k/intern-assignment.git)
 -  **API 엔드포인트 URL** : `http://43.201.60.238:8080
 
